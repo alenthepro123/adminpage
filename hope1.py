@@ -3,7 +3,7 @@ from streamlit_option_menu import option_menu
 import pandas as pd
 import hashlib
 
-# Simulated User Authentication Database (Replace this with a real database)
+# Simulated User Authentication Database (Replace with a real database)
 USER_DB = {
     'admin@example.com': hashlib.sha256('admin123'.encode()).hexdigest(),
     'user@example.com': hashlib.sha256('user123'.encode()).hexdigest()
@@ -101,6 +101,7 @@ else:
             f"<style>body {{background-color: {bg_color};}}</style>",
             unsafe_allow_html=True
         )
+
 
 
 
